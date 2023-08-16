@@ -12,7 +12,7 @@ figure_util.Draw(
         {
             'barName': 'WeSQL-Scale',
             'lineName': 'WeSQL-Scale Latency',
-            'fileName': './data/vtgate-disable.csv',
+            'fileName': './data/wesql-scale-disable.csv',
         },
     ]
 )
