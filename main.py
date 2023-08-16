@@ -161,9 +161,9 @@ figure_util.Draw(
             'fileName': './final/mysql-disable.csv',
         },
         {
-            'barName': 'VTGate',
-            'lineName': 'VTGate Latency',
-            'fileName': './final/vtgat-disablee.csv',
+            'barName': 'WeSQL-Scale',
+            'lineName': 'WeSQL-Scale Latency',
+            'fileName': './final/vtgate-disable.csv',
         },
     ]
 )
@@ -175,12 +175,12 @@ figure_util.Draw(
         {
             'barName': 'MySQL',
             'lineName': 'MySQL Latency',
-            'fileName': './final/mysql-80.csv',
+            'fileName': './final/mysql-enable.csv',
         },
         {
-            'barName': 'VTGate (100% Read Write Split Ratio)',
-            'lineName': 'VTGate Latency (100% Read Write Split Ratio)',
-            'fileName': './final/vtgate-80-100.csv',
+            'barName': 'WeSQL-Scale',
+            'lineName': 'WeSQL-Scale Latency',
+            'fileName': './final/wesql-scale-enable.csv',
         },
     ]
 )
