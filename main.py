@@ -78,7 +78,7 @@ figure_util.Draw(
     ]
 )
 
-
+#######################################################################################################################
 
 
 
@@ -142,6 +142,45 @@ figure_util.Draw(
             'barName': 'VTGate (100% Read Write Split Ratio)',
             'lineName': 'VTGate Latency (100% Read Write Split Ratio)',
             'fileName': './data2/vtgate-80-100.csv',
+        },
+    ]
+)
+
+
+
+
+#######################################################################################################################
+
+
+figure_util.Draw(
+    figureTitle="MySQL vs WeSQL-Scale (With Read Write Split Disable)",
+    configs=[
+        {
+            'barName': 'MySQL',
+            'lineName': 'MySQL Latency',
+            'fileName': './final/mysql-20.csv',
+        },
+        {
+            'barName': 'VTGate (100% Read Write Split Ratio)',
+            'lineName': 'VTGate Latency (100% Read Write Split Ratio)',
+            'fileName': './final/vtgate-20-100.csv',
+        },
+    ]
+)
+
+
+figure_util.Draw(
+    figureTitle="MySQL vs WeSQL-Scale (With Read Write Split Enable)",
+    configs=[
+        {
+            'barName': 'MySQL',
+            'lineName': 'MySQL Latency',
+            'fileName': './final/mysql-80.csv',
+        },
+        {
+            'barName': 'VTGate (100% Read Write Split Ratio)',
+            'lineName': 'VTGate Latency (100% Read Write Split Ratio)',
+            'fileName': './final/vtgate-80-100.csv',
         },
     ]
 )
