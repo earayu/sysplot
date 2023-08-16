@@ -152,56 +152,35 @@ import figure_util
 #######################################################################################################################
 
 
-# figure_util.Draw(
-#     figureTitle="MySQL vs WeSQL-Scale (With Read Write Split Disable)",
-#     configs=[
-#         {
-#             'barName': 'MySQL',
-#             'lineName': 'MySQL Latency',
-#             'fileName': './final/mysql-20.csv',
-#         },
-#         {
-#             'barName': 'VTGate (100% Read Write Split Ratio)',
-#             'lineName': 'VTGate Latency (100% Read Write Split Ratio)',
-#             'fileName': './final/vtgate-20-100.csv',
-#         },
-#     ]
-# )
-
-
-# figure_util.Draw(
-#     figureTitle="MySQL vs WeSQL-Scale (With Read Write Split Enable)",
-#     configs=[
-#         {
-#             'barName': 'MySQL',
-#             'lineName': 'MySQL Latency',
-#             'fileName': './final/mysql-80.csv',
-#         },
-#         {
-#             'barName': 'VTGate (100% Read Write Split Ratio)',
-#             'lineName': 'VTGate Latency (100% Read Write Split Ratio)',
-#             'fileName': './final/vtgate-80-100.csv',
-#         },
-#     ]
-# )
-
-
-
-#######################################################################################################################
-
-
 figure_util.Draw(
     figureTitle="MySQL vs WeSQL-Scale (With Read Write Split Disable)",
     configs=[
         {
             'barName': 'MySQL',
             'lineName': 'MySQL Latency',
-            'fileName': './final/mysql.csv',
+            'fileName': './final/mysql-disable.csv',
         },
         {
             'barName': 'VTGate',
             'lineName': 'VTGate Latency',
-            'fileName': './final/vtgate.csv',
+            'fileName': './final/vtgat-disablee.csv',
+        },
+    ]
+)
+
+
+figure_util.Draw(
+    figureTitle="MySQL vs WeSQL-Scale (With Read Write Split Enable)",
+    configs=[
+        {
+            'barName': 'MySQL',
+            'lineName': 'MySQL Latency',
+            'fileName': './final/mysql-80.csv',
+        },
+        {
+            'barName': 'VTGate (100% Read Write Split Ratio)',
+            'lineName': 'VTGate Latency (100% Read Write Split Ratio)',
+            'fileName': './final/vtgate-80-100.csv',
         },
     ]
 )
