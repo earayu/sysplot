@@ -2,7 +2,7 @@ import figure_util
 
 
 figure_util.Draw(
-    figureTitle="MySQL vs WeSQL-Scale (With Read Write Split Disable)",
+    figureTitle="MySQL vs WeSQL-Scale (With Read Write Split Disabled)",
     configs=[
         {
             'barName': 'MySQL',
@@ -19,7 +19,7 @@ figure_util.Draw(
 
 
 figure_util.Draw(
-    figureTitle="MySQL vs WeSQL-Scale (With Read Write Split Enable)",
+    figureTitle="MySQL vs WeSQL-Scale (With Read Write Split Enabled)",
     configs=[
         {
             'barName': 'MySQL',
